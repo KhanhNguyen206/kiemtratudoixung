@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiemtratudoixung</title>
+</head>
+<body>
+<script>
+    function check(word) {
+        for (let i=0; i<(word.length-1)-i; i++){
+            if (word[i]== word[(word.length-1)-i]) return true;
+        }
+        return false;
+    }
+
+    let a=prompt("Nhập vào đây một từ cần kiểm tra đối xứng:");
+    if(check(a)== true) {
+        alert("Đây là một từ đối xứng");
+    }else {
+        alert("Đây là một từ không đối xứng");
+    }
+</script>
+</body>
+</html>
